@@ -1,0 +1,39 @@
+/**
+ *  o comentario abaixo para injetar scss dependencias
+ */
+// bower:scss
+// endbower
+
+$navbar-inverse-link-color: #5AADBB;
+
+@import "../../bower_components/fontawesome/scss/font-awesome.scss";
+$fa-font-path: "../../bower_components/fontawesome/fonts";
+
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+$icon-font-path: '../../bower_components/bootstrap-sass/assets/fonts/bootstrap/'; 
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+$nav-profil-pattern: url("../assets/images/patterns/header-profile.png") no-repeat;
+@import "scss/style";
+
+/**
+ *  o comentario abaixo é para o gulp injetar os arquivos scss
+ */
+// injector
+// endinjector
+
+
