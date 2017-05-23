@@ -1,0 +1,53 @@
+{
+  "name": "testemax",
+  "version": "2.5.0",
+  "dependencies": {
+    "angular-animate": "~1.5.0",
+    "angular-cookies": "~1.5.0",
+    "angular-touch": "~1.5.0",
+    "angular-sanitize": "~1.5.0",
+    "angular-messages": "~1.5.0",
+    "angular-aria": "~1.5.0",
+    "jquery": "~2.1.4",
+    "angular-resource": "~1.5.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-bootstrap": "~1.1.2",
+    "moment": "~2.10.6",
+    "animate.css": "~3.4.0",
+    "angular": "~1.5.0",
+    "pace": "~1.0.2",
+    "metisMenu": "~2.0.2",
+    "fontawesome": "~4.5.0",
+    "bootstrap-sass": "^3.3.7",
+    "jquery-ui-datepicker-only": "1.12.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "scss/_bootstrap.scss",
+        "fonts/glyphicons-halflings-regular.eot",
+        "fonts/glyphicons-halflings-regular.svg",
+        "fonts/glyphicons-halflings-regular.ttf",
+        "fonts/glyphicons-halflings-regular.woff",
+        "fonts/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "fontawesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.svg",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.woff2"
+      ]
+    }
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.5.0"
+  }
+}

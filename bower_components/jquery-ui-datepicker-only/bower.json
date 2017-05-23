@@ -1,0 +1,20 @@
+{
+  "name": "jquery-ui-datepicker-only",
+  "version": "1.12.1",
+  "description": "jQuery UI datepicker download",
+  "keywords": [
+    "jquerui datepicker",
+    "datepicker"
+  ],
+  "main": [
+    "./jquery-ui.min.js",
+    "./jquery-ui.min.css",
+    "./jquery-ui.structure.min.css",
+    "./jquery-ui.theme.min.css"
+  ],
+  "homepage": "http://jqueryui.com/datepicker/",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}

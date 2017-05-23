@@ -1,0 +1,29 @@
+{
+  "name": "jquery-ui-datepicker-only",
+  "description": "jQuery UI datepicker download",
+  "keywords": [
+    "jquerui datepicker",
+    "datepicker"
+  ],
+  "main": [
+    "./jquery-ui.min.js",
+    "./jquery-ui.min.css",
+    "./jquery-ui.structure.min.css",
+    "./jquery-ui.theme.min.css"
+  ],
+  "homepage": "http://jqueryui.com/datepicker/",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "_release": "23555b3754",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "23555b3754481353120821e08099fbdea6399c2c"
+  },
+  "_source": "https://github.com/NathanQ/jquery-ui-datepicker-only.git",
+  "_target": "*",
+  "_originalSource": "jquery-ui-datepicker-only",
+  "_direct": true
+}
