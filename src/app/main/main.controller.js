@@ -12,6 +12,7 @@ angular.module('testmax')
     $scope.hideResults = function () {
       $scope.showResults = false;
       $scope.showErrorImpossible = false;
+      $scope.erroTxt = false;
     } 
     
     $scope.mudalocal = function (formValid) {
@@ -25,7 +26,7 @@ angular.module('testmax')
           var timestamp = Math.round(new Date(newDate).getTime() / 1000);
           var suacidadeLocation = angular.element('#suacidadeLocation').val();
           var cidadeoutrapessoaLocation = angular.element('#cidadeoutrapessoaLocation').val();
-          var urlDefault = "https://maps.googleapis.com/maps/api/timezone/json?key=AIzaSyBdKcOOJljK0GCbqaM5EzsSkJorY7ZLsFo&location=";
+          var urlDefault = "https://iimaps.googleapis.com/maps/api/timezone/json?key=AIzaSyBdKcOOJljK0GCbqaM5EzsSkJorY7ZLsFo&location=";
           var urlSuacidade = urlDefault + suacidadeLocation + "&timestamp=" + timestamp.valueOf();
           var urlCidadedaoutrapessoa = urlDefault + cidadeoutrapessoaLocation + "&timestamp=" + timestamp.valueOf();
           var timeA, timeB;
@@ -67,11 +68,13 @@ angular.module('testmax')
                 $scope.timeA = finalHourA + ":" + (timeA.getMinutes() < 10 ? "0" + timeA.getMinutes() : timeA.getMinutes()) + amPmA;
                 $scope.timeB = finalHourB + ":" + (timeB.getMinutes() < 10 ? "0" + timeB.getMinutes() : timeB.getMinutes()) + amPmB;
               }
-            }, function error(response) {
-              $scope.erroTxt = response.statusText;
+              }, function error(response) {
+                console.log(response.statusText);
+                $scope.erroTxt = true;
             });
-          }, function error(response) {
-            $scope.erroTxt = response.statusText;
+            }, function error(response) {
+              console.log(response.statusText);
+              $scope.erroTxt = true;
           });
         }, 1000);
       }
