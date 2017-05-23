@@ -26,7 +26,7 @@ angular.module('testmax')
           var timestamp = Math.round(new Date(newDate).getTime() / 1000);
           var suacidadeLocation = angular.element('#suacidadeLocation').val();
           var cidadeoutrapessoaLocation = angular.element('#cidadeoutrapessoaLocation').val();
-          var urlDefault = "https://iimaps.googleapis.com/maps/api/timezone/json?key=AIzaSyBdKcOOJljK0GCbqaM5EzsSkJorY7ZLsFo&location=";
+          var urlDefault = "https://maps.googleapis.com/maps/api/timezone/json?key=AIzaSyBdKcOOJljK0GCbqaM5EzsSkJorY7ZLsFo&location=";
           var urlSuacidade = urlDefault + suacidadeLocation + "&timestamp=" + timestamp.valueOf();
           var urlCidadedaoutrapessoa = urlDefault + cidadeoutrapessoaLocation + "&timestamp=" + timestamp.valueOf();
           var timeA, timeB;
